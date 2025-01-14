@@ -63,5 +63,86 @@
 // console.log(`Length of "${ভাষা}" = ${ভাষা.length} `)
 
 ////////////////////   Operators and Coercion ////////////////////////
+// console.log(3 + 4);
+// console.log( '3' + '4');
+// console.log( '3' + 4);  // it will concatinate integer 4 and sum will be 34
+// console.log( 3 + '4');
+// console.log('3' * '4');
 
 
+//////////////////   Loose and Strict Equality  /////////////////////////
+// console.log( 3 == 4 )
+// console.log( 3 == 3 )
+// console.log( '3' == 3 )
+
+///////////////////  Strict Equality   /////////////////////////////
+// console.log( '3' === 3);
+// console.log( 3 === 3);
+// console.log( undefined == null );
+// console.log( undefined === null );
+
+
+//////////////////////   Conditions   /////////////////////////////
+// let x = 3;
+// if (x == 5){
+//     console.log("What?");
+// }else{
+//     console.log(" Of course 3 != 5");
+// }
+
+/////////////////////    Iteration   ///////////////////////////////
+// for (let x = 0; x <5; x++) {
+//     console.log(x);
+// }
+
+
+////////////////////  Iteration - in vs of   ///////////////////////
+// const v = [11,22,33,44];
+// for (const x of v){
+//     console.log(x);
+// }
+// const y = [11,22,33,44];
+// for (const x in y){   /// in used to get index value not the actual value
+//     console.log(x);
+// }
+
+///////////////////  Functions   /////////////////////////////////////
+/////////////  Regular declaration 
+// function add (x,y){
+//     return x+y ;
+// }
+// console.log(add(4,3))
+
+////////////  Named declaration (Assigning to Variables)
+// let add = 
+// function (x,y){
+//     return x + y ;
+// }
+// console.log(add(4,3))
+
+///////////// Arrow function
+// let add = (x, y ) => x+y ;
+// console.log(add(4,3))
+
+/////////////// Anonymouse function
+// console.log(function(x,y){return x +y ;} (2,3))
+
+
+//////////
+// function add (x, y ){
+//     return x + y ;
+// }
+// console.log(typeof(add));
+// console.log(add(2,3));
+// add.v  = {'a': 3 , 'b': 6}
+// console.log(add.v);
+// console.log(add.v.a);
+// console.log(add.v.x);
+
+
+
+/////////
+// const obj = { color : 'red' }
+// obj.changecolor = function (color) {this.color = color}
+// obj.changecolor('green')
+// console.log(obj.color)
