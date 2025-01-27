@@ -115,7 +115,7 @@
 * ///////////////////////////   Destructuring   //////////////////////
 */
 
-let x = [1,2,3];
+// let x = [1,2,3];
 // let [a,b] = x; // i.e [a,b] == [1,2,3] (object from x)and then a will be 1 , b will be 2
 
 // console.log(a);
