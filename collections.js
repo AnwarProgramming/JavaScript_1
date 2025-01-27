@@ -36,6 +36,7 @@
 // let x = [1, "b", a => a+1];
 // x.length = 6;
 // for (const i in x){
+//     console.log(i)
 //     console.log(`x : ${x[i]} is type of ${typeof(x[i])}`)
 // }
 
@@ -53,7 +54,7 @@
 
 // let x = {'a' : 1,'b' : 'alpha','c' : [1,2,3]}
 // for (const i in x){
-//     console.log(i);
+//     console.log(i);   // 'i' is key here
 //     console.log(x[i]);
 // }
 
@@ -87,8 +88,8 @@
 /*
 * ///////////////////////// Spreading  ///////////////
 */
-// let x = [1,2,3];
-// let y = [0, ...x, 4];
+// let x = [1,2,3,4];
+// let y = [0, ...x, 7];
 // console.log(x);
 // console.log(y);
 
@@ -101,7 +102,7 @@
 // console.log(x);
 // console.log(y);
 
-// console.log(x.filter(x => x<0));
+// console.log(x.filter(t => t<0));
 // console.log(x.map(i => i>0 ? '+':'-'));
 
 // console.log(x.reduce((a,i) => a+i,0));
@@ -114,30 +115,39 @@
 * ///////////////////////////   Destructuring   //////////////////////
 */
 
-// let x = [1,2,3];
-// let [a,b] = x;
+let x = [1,2,3];
+// let [a,b] = x; // i.e [a,b] == [1,2,3] (object from x)and then a will be 1 , b will be 2
+
+// console.log(a);
+// console.log(b);
 // console.log(x,a,b);
 
-// for (const [k,v] of x.entries()){
+// for (const [k,v] of x.entries()){ /// here k will be index of x
 //     console.log(`Index ${k}, value: ${v} of type ${typeof(v)}`);
 // }
 
-// ///////////////  Object Destructuring
-// const person = {
-//     firstName:'Albert',
-//     lastName:'Pinto',
-//     age:25,
-//     city:'Mumbai'
-// };
+
+/*
+////////////////////  Object Destructuring    /////////////////////////
+*/ 
+const person = {
+    firstName:'Albert',
+    lastName:'Pinto',
+    age:25,
+    city:'Mumbai'
+};
 // const {firstName: fn, city:c} = person;
 // console.log(person);
 // console.log(fn);
 // console.log(c);
 
+// const {age: a} = person;
+// console.log(a)
+
 // const {lastName,age} = person;
 // console.log(lastName);
 // console.log(age);
 
-// const {firstName, ...rem} = person;
+// const {firstName, ...rem} = person; /// ...rem contains the remaing part of the person except firstname
 // console.log(firstName);
 // console.log(rem);
