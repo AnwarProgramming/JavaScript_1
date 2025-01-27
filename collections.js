@@ -130,12 +130,12 @@ let x = [1,2,3];
 /*
 ////////////////////  Object Destructuring    /////////////////////////
 */ 
-const person = {
-    firstName:'Albert',
-    lastName:'Pinto',
-    age:25,
-    city:'Mumbai'
-};
+// const person = {
+//     firstName:'Albert',
+//     lastName:'Pinto',
+//     age:25,
+//     city:'Mumbai'
+// };
 // const {firstName: fn, city:c} = person;
 // console.log(person);
 // console.log(fn);
