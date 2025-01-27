@@ -104,6 +104,7 @@
 // const y = [11,22,33,44];
 // for (const x in y){   /// in used to get index value not the actual value
 //     console.log(x);
+//     console.log(y[x])
 // }
 
 ///////////////////  Functions   /////////////////////////////////////
